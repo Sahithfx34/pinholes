@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".location">
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/btn_location"
+        style="@style/getlocation"
+        android:layout_width="304dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:text="Get Location"
+        app:initialCornerAngle="27dp"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/darkTextColor"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_latitude"
+        android:text="0.0"
+        android:textSize="24sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/darkTextColor"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_longitude"
+        android:text="0.0"
+        android:textSize="24sp"/>
+
+
+
+</LinearLayout>

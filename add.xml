@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".add">
+
+    <EditText
+        android:id="@+id/latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textNoSuggestions"
+        android:hint="latitude"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+        android:id="@+id/longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textNoSuggestions"
+        android:hint="longitude"
+        tools:ignore="TouchTargetSizeCheck" />
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/selectimage"
+        style="@style/saveImage"
+        android:layout_width="304dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:text="Select Image"
+        app:initialCornerAngle="27dp"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="244dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/saveImage"
+        style="@style/saveImage"
+        android:layout_width="304dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:text="Save Image"
+        app:initialCornerAngle="27dp"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+
+
+</LinearLayout>
